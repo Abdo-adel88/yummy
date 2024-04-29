@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-black">
+
+       
+    <nav>
+        <div id="sidebar" class="fixed top-0 left-10 bottom-0 bg-black flex flex-row justify-between z-50">
+            <ul class="flex flex-col gap-y-10 p-5 justify-center text-white w-5/6 z-50">
+                <li id="idsearch" onclick=" gotolocal(this.id)" class="relative cursor-pointer text-xl font-semibold">
+                  Search
+                </li>
+                <li id="idcateg" onclick="gotolocal(this.id)" class="relative cursor-pointer text-xl font-semibold">
+                  Categories
+                </li>
+                <li id="idareaa" onclick="gotolocal(this.id)" class="relative cursor-pointer text-xl font-semibold">
+                  Area
+                </li>
+                <li id="iditeg" onclick="gotolocal(this.id)" class="relative cursor-pointer text-xl font-semibold">
+                  Ingredients
+                </li>
+                <li  onclick="location.replace('contact.html')" class="relative cursor-pointer text-xl font-semibold">
+                 <a href="contact.html"> Contact Us</a>
+                </li>
+                <li class="text-white mt-auto">
+                    <i class="fa-brands fa-facebook me-1 cursor-pointer"></i><i
+                        class="fa-brands fa-twitter me-1 cursor-pointer"></i><i
+                        class="fa-solid fa-globe cursor-pointer"></i><br>Copyright Â©
+                    2019 All Rights<br>Reserved.
+                </li>
+            </ul>
+            <div class="flex flex-col justify-between items-center bg-white p-1 w-1/6">
+                <img src="imag/logo.png" class="w-10 h-10 block" alt="">
+                <i id="close" class="fa-solid fa-xmark fa-3x cursor-pointer hidden"></i>
+                <i id="open" class="fa-solid fa-bars fa-3x cursor-pointer"></i>
+                <div class="p-10 flex flex-col gap-11">
+                    <i class="fa-solid fa-globe fa-lg cursor-pointer"></i>
+                    <i class="fa-solid fa-share-nodes fa-lg cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="lg:container h-[100vh] w-[80vw] lg:mx-auto ms-auto relative flex flex-col justify-center items-center">
+
+        <div class="flex lg:flex-row flex-col flex-wrap gap-2 w-10/12 text-white">
+            <div class="w-[49%]">
+                <input id="namevalid" type="text" placeholder="Enter Your Name"
+                    class="py-3 px-10 outline-0 rounded-2xl border-sky-500 border-b-4 border-b-solid bg-slate-950 lg:w-full"
+                    required="" style="height: 50px;">
+                <p class="text-center"></p>
+            </div>
+            <div class="w-[49%]">
+                <input id="emailvalid" type="text" placeholder="Enter Your Email"
+                    class="py-3 px-10 outline-0 rounded-2xl border-sky-500 border-b-4 border-b-solid bg-slate-950 lg:w-full"
+                    required="" style="height: 50px;">
+                <p class="text-center"></p>
+            </div>
+
+            <div class="w-[49%]">
+                <input id="phonevalid" type="text" minlength="10" maxlength="10" placeholder="Enter Your Phone"
+                    class="py-3 px-10 outline-0 rounded-2xl border-sky-500 border-b-4 border-b-solid bg-slate-950 lg:w-full"
+                    required="" style="height: 50px;">
+                <p class="text-center"></p>
+            </div>
+            <div class="w-[49%]">
+                <input id="agevalid" type="number" minlength="1" maxlength="10" placeholder="Enter Your Age"
+                    class="py-3 px-10 outline-0 rounded-2xl border-sky-500 border-b-4 border-b-solid bg-slate-950 lg:w-full"
+                    required="" style="height: 50px;">
+                <p class="text-center"></p>
+            </div>
+            <div class="w-[49%]">
+                <input id="passwordvalid" type="password" placeholder="Enter Your Password"
+                    class="py-3 px-10 outline-0 rounded-2xl border-sky-500 border-b-4 border-b-solid bg-slate-950 lg:w-full"
+                    required="" style="height: 50px;">
+                <p class="text-center"></p>
+            </div>
+            <div class="w-[49%]">
+                <input id="repassword" type="password" placeholder="RePassword"
+                    class="py-3 px-10 outline-0 rounded-2xl border-sky-500 border-b-4 border-b-solid bg-slate-950 lg:w-full"
+                    required="" style="height: 50px;">
+                <p class="text-center"></p>
+            </div>
+        </div>
+        <button
+            class="text-center w-fit bg-transparent border-solid border-2 text-sky-600 hover:text-white border-sky-500 py-3 px-4 rounded-md mt-5 mx-auto block font-semibold text-lg hover:bg-sky-800"
+            disabled="" style="filter: grayscale(100%);">
+            Submit
+        </button>
+        <span class="text-3xl text-green-600 font-black mt-10"></span>
+    </main>
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <script src="js/catecg.js"></script>
+    
+</body>
+
+</html>

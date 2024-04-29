@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply w-full h-full absolute duration-700 top-full font-bold py-2 px-4 rounded-xl;
+  }
+
+  .dola:hover .btn-primary {
+    @apply bg-slate-100 top-0 opacity-70 rounded-xl
+  }
+
+  .btnn {
+    @apply bg-black text-red-600 w-20 rounded-xl h-10 border-red-600 border-solid border-2
+  }
+
+  .btnn:hover {
+    @apply bg-red-600 text-white
+  }
+
+  .btnn-danger {
+    @apply bg-red-600 text-white w-20 rounded-xl h-10 
+  }
+  .btnn-danger:hover {
+    @apply bg-red-800 text-white
+  }
+  .btnn-success {
+    @apply bg-green-600 text-white w-20 rounded-xl h-10 
+  }
+  .btnn-success:hover {
+    @apply bg-green-800 text-white
+  }
+
+}
